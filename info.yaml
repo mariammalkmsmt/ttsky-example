@@ -25,27 +25,27 @@ project:
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: "Bit_in - Serial data input (LSB first"
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: ""
+  ui[0]: "Bit_in — Serial data input (LSB first: 7 bits operand A, then 7 bits operand B)"
+  ui[1]: "op[0] — Opcode bit 0 (LSB) — stable parallel input throughout operation"
+  ui[2]: "op[1] — Opcode bit 1"
+  ui[3]: "op[2] — Opcode bit 2 (MSB)"
   ui[4]: ""
   ui[5]: ""
   ui[6]: ""
   ui[7]: ""
 
-  # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+  # Dedicated outputs
+  uo[0]: "Data_out[0] — Result bit 0 (LSB)"
+  uo[1]: "Data_out[1] — Result bit 1"
+  uo[2]: "Data_out[2] — Result bit 2"
+  uo[3]: "Data_out[3] — Result bit 3"
+  uo[4]: "Data_out[4] — Result bit 4"
+  uo[5]: "Data_out[5] — Result bit 5"
+  uo[6]: "Data_out[6] — Result bit 6 (MSB of operand field)"
+  uo[7]: "Data_out[7] — Carry-out (ADD) / Borrow flag (SUB); always 0 for AND, OR, XOR"
 
   # Bidirectional pins
-  uio[0]: ""
+  uio[0]: "Done — One-cycle high pulse (1 CLK) indicating operation result is valid"
   uio[1]: ""
   uio[2]: ""
   uio[3]: ""
