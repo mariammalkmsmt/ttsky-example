@@ -9,7 +9,7 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+The 7-bit ALU performs arfithmetic and logical operations on two 7-bit numbers
 
 ## How to test
 
